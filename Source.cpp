@@ -35,8 +35,8 @@ void Modificare()
 		while (!feof(f))
 		{
 			i++;
-			printf("Alege zona pe care o modifici (0/1): ");
-			scanf_s("%hhu", &x.rating[i]);
+			printf("Modifica rating-ul in: ");
+			scanf_s("%hhu", &x.rating[1]);
 			
 			fprintf(fp, "\n%4d %-19s %-19s %-7hhu %-7hhu", x.id, x.bucatar, x.title, x.rating[0], x.rating[1]);
 			fseek(f, 0, 1);
